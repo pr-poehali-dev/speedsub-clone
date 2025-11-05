@@ -22,21 +22,21 @@ const reactionTypes = [
   { 
     id: 'positive', 
     title: 'Позитивные реакции',
-    price: 0.27,
+    price: 2.9,
     time: '0-60 минут',
     icon: 'ThumbsUp'
   },
   { 
     id: 'premium', 
     title: 'Позитивные прем реакции',
-    price: 0.27,
+    price: 2.9,
     time: '0-60 минут',
     icon: 'Star'
   },
   { 
     id: 'negative', 
     title: 'Негативные реакции',
-    price: 0.27,
+    price: 2.9,
     time: '0-60 минут',
     icon: 'ThumbsDown'
   },
@@ -96,7 +96,7 @@ export default function Index() {
         <header className="border-b border-[#1a1a1a] px-6 py-4 flex items-center justify-between sticky top-0 bg-[#0a0a0a] z-10">
           <div className="flex items-center gap-2">
             <Icon name="Zap" size={24} className="text-red-500" />
-            <h1 className="text-xl font-bold">SpeedSub</h1>
+            <h1 className="text-xl font-bold">SpeedSub <span className="text-[#FFD700]">Premium</span></h1>
           </div>
           
           <div className="flex items-center gap-4">
