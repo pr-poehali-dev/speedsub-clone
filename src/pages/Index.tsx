@@ -30,7 +30,7 @@ const reactionTypes = [
   { 
     id: 'premium', 
     title: 'Позитивные прем реакции',
-    price: 2.9,
+    price: 9.1,
     time: '0-60 минут',
     icon: 'Star'
   },
@@ -117,9 +117,11 @@ export default function Index() {
                 FAQ
               </Button>
             </Link>
-            <Button className="bg-red-500 hover:bg-red-600 text-white">
-              Войти в аккаунт
-            </Button>
+            <Link to="/login">
+              <Button className="bg-red-500 hover:bg-red-600 text-white">
+                Войти в аккаунт
+              </Button>
+            </Link>
           </div>
         </header>
 

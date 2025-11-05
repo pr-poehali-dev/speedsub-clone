@@ -70,9 +70,11 @@ export default function Services() {
               FAQ
             </Button>
           </Link>
-          <Button className="bg-red-500 hover:bg-red-600 text-white">
-            Войти в аккаунт
-          </Button>
+          <Link to="/login">
+            <Button className="bg-red-500 hover:bg-red-600 text-white">
+              Войти в аккаунт
+            </Button>
+          </Link>
         </div>
       </header>
 
