@@ -62,7 +62,7 @@ export default function Contacts() {
             </a>
 
             <a 
-              href="mailto:support@speedsub.ru"
+              href="mailto:speedsub@gmail.com"
               className="bg-[#0f0f0f] border border-[#1a1a1a] rounded-lg p-6 hover:border-red-500/50 transition-colors"
             >
               <div className="flex items-center gap-4 mb-3">
@@ -74,7 +74,7 @@ export default function Contacts() {
                   <p className="text-sm text-gray-400">Ответим в течение часа</p>
                 </div>
               </div>
-              <p className="text-gray-300">support@speedsub.ru</p>
+              <p className="text-gray-300">speedsub@gmail.com</p>
             </a>
           </div>
 

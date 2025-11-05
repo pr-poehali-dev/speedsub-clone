@@ -44,16 +44,16 @@ const reactionTypes = [
 ];
 
 const menuItems = [
-  { id: 'reactions', icon: 'Heart', label: 'Реакции' },
-  { id: 'subscribers', icon: 'Users', label: 'Подписчики' },
-  { id: 'premium', icon: 'Crown', label: 'Подписчики в Премиум канал' },
-  { id: 'views', icon: 'Eye', label: 'Просмотры' },
-  { id: 'stars', icon: 'Star', label: 'Звёзды (Stars)' },
-  { id: 'reposts', icon: 'Repeat', label: 'Репосты' },
-  { id: 'news', icon: 'Newspaper', label: 'Новости' },
-  { id: 'packages', icon: 'Package', label: 'Пусто для паблика' },
-  { id: 'comments', icon: 'MessageCircle', label: 'Комментарии' },
-  { id: 'referrals', icon: 'UserPlus', label: 'Рефералы' },
+  { id: 'reactions', icon: 'Heart', label: 'Реакции', path: '/reactions' },
+  { id: 'subscribers', icon: 'Users', label: 'Подписчики', path: '/subscribers' },
+  { id: 'premium', icon: 'Crown', label: 'Подписчики в Премиум канал', path: '/premium-subscribers' },
+  { id: 'views', icon: 'Eye', label: 'Просмотры', path: '/views' },
+  { id: 'stars', icon: 'Star', label: 'Звёзды (Stars)', path: '/' },
+  { id: 'reposts', icon: 'Repeat', label: 'Репосты', path: '/' },
+  { id: 'news', icon: 'Newspaper', label: 'Новости', path: '/' },
+  { id: 'packages', icon: 'Package', label: 'Пусто для паблика', path: '/' },
+  { id: 'comments', icon: 'MessageCircle', label: 'Комментарии', path: '/' },
+  { id: 'referrals', icon: 'UserPlus', label: 'Рефералы', path: '/' },
 ];
 
 export default function Index() {
@@ -80,15 +80,16 @@ export default function Index() {
         
         <nav className="flex flex-col gap-4 flex-1">
           {menuItems.map((item) => (
-            <button
+            <Link
               key={item.id}
+              to={item.path}
               className="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-[#1a1a1a] transition-colors group relative"
             >
               <Icon name={item.icon} size={20} className="text-gray-400 group-hover:text-white transition-colors" />
               <div className="absolute left-full ml-2 px-2 py-1 bg-[#1a1a1a] rounded text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity">
                 {item.label}
               </div>
-            </button>
+            </Link>
           ))}
         </nav>
       </aside>
