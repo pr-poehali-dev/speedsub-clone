@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Icon from '@/components/ui/icon';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -100,15 +101,21 @@ export default function Index() {
           </div>
           
           <div className="flex items-center gap-4">
-            <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white">
-              Услуги
-            </Button>
-            <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white">
-              Контакты
-            </Button>
-            <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white">
-              FAQ
-            </Button>
+            <Link to="/services">
+              <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white">
+                Услуги
+              </Button>
+            </Link>
+            <Link to="/contacts">
+              <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white">
+                Контакты
+              </Button>
+            </Link>
+            <Link to="/faq">
+              <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white">
+                FAQ
+              </Button>
+            </Link>
             <Button className="bg-red-500 hover:bg-red-600 text-white">
               Войти в аккаунт
             </Button>
