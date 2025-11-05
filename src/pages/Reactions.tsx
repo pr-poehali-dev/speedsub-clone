@@ -82,7 +82,7 @@ export default function Reactions() {
               </div>
               <div className="flex items-center justify-between">
                 <div>
-                  <div className="text-2xl font-bold text-[#FFD700]">2.9 ₽</div>
+                  <div className="text-2xl font-bold text-[#FFD700]">9.1 ₽</div>
                   <div className="text-xs text-gray-400">за реакцию</div>
                 </div>
                 <Link to="/">
