@@ -13,6 +13,7 @@ import Subscribers from "./pages/Subscribers";
 import PremiumSubscribers from "./pages/PremiumSubscribers";
 import Views from "./pages/Views";
 import Login from "./pages/Login";
+import Register from "./pages/Register";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -33,6 +34,7 @@ const App = () => (
           <Route path="/premium-subscribers" element={<PremiumSubscribers />} />
           <Route path="/views" element={<Views />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
